@@ -23,8 +23,8 @@ public class AddressService {
         return addressRepository.findById(id).orElse(null);
     }
 
-    public Address save(Address user) {
-        return addressRepository.save(user);
+    public Address save(Address address) {
+        return addressRepository.save(address);
     }
 
     public void update(Address address) {
